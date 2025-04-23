@@ -1153,6 +1153,45 @@ section {
   color: #fff;
 }
 
+/* style cards */
+.experience-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.toggle-details {
+  font-size: 14px;
+}
+
+.card-preview {
+  color: #6c757d;
+}
+
+.card-details {
+  margin-top: 10px;
+}
 
 @keyframes fadeInDown {
   0% {
