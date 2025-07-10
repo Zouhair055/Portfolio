@@ -66,6 +66,22 @@ h6 {
   opacity: 1;
 }
 
+
+
+/*--------------------------------------------------------------
+logo compagnies
+--------------------------------------------------------------*/
+.company-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(20,157,221,0.15);
+  background: #fff;
+  transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.4s;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
