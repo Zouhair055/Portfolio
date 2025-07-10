@@ -82,6 +82,23 @@ logo compagnies
   transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.4s;
 }
 
+.edu-logo {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(20,157,221,0.12);
+  background: #f8f9fa;
+  transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+}
+.edu-logo:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 6px 24px rgba(20,157,221,0.18);
+}
+.edu-card-body {
+  padding-top: 18px;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
