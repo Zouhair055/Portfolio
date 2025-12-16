@@ -66,6 +66,80 @@ h6 {
   opacity: 1;
 }
 
+
+
+/*--------------------------------------------------------------
+logo compagnies
+--------------------------------------------------------------*/
+.company-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(20,157,221,0.15);
+  background: #fff;
+  transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.4s;
+}
+
+.edu-logo {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(20,157,221,0.12);
+  background: #f8f9fa;
+  transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+}
+.edu-logo:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 6px 24px rgba(20,157,221,0.18);
+}
+.edu-card-body {
+  padding-top: 18px;
+}
+
+/*--------------------------------------------------------------
+# DOWNLOAD CV
+--------------------------------------------------------------*/
+.btn-cv-download {
+  display: inline-block;
+  background: linear-gradient(90deg, #149ddd 0%, #0a58ca 100%);
+  color: #fff;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 24px rgba(20,157,221,0.13);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+.btn-cv-download i {
+  margin-left: 12px;
+  font-size: 1.4em;
+  vertical-align: middle;
+  animation: bounce 1.2s infinite;
+}
+.btn-cv-download:hover {
+  background: linear-gradient(90deg, #0a58ca 0%, #149ddd 100%);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(20,157,221,0.22);
+  text-decoration: none;
+  color: #fff;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-7px);}
+}
+
+.card-body img,
+.card-body p {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1159,6 +1233,13 @@ section {
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
+}
+
+.card-details,
+.card-details li {
+  text-align: justify;
+  text-align-last: left; /* alignement de la dernière ligne */
+  hyphens: auto;         /* césure si nécessaire */
 }
 
 .experience-card:hover {
