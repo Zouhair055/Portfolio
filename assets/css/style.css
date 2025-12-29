@@ -1235,12 +1235,6 @@ section {
   transition: transform 0.3s ease;
 }
 
-.card-details,
-.card-details li {
-  text-align: justify;
-  text-align-last: left; /* alignement de la dernière ligne */
-  hyphens: auto;         /* césure si nécessaire */
-}
 
 .experience-card:hover {
   transform: scale(1.02);
