@@ -563,7 +563,16 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://backendp-c5ei.onrender.com/submit-form" method="post" role="form" class="php-email-form">              <div class="row">
+            <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  role="form"
+  class="php-email-form"
+>
+<input type="hidden" name="form-name" value="contact">
+<div class="row">
+
                 <div class="form-group col-md-6">
                   <label for="name">Nom</label>
                   <input type="text" name="name" class="form-control" id="name" required>
