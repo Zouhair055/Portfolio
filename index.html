@@ -306,6 +306,15 @@
                   <li>Utilisation de bibliothèques avancées comme LangChain, Transformers, et Spacy pour le traitement du langage naturel.</li>
                   <li>Déploiement facilité grâce à Docker et gestion des dépendances via un environnement Python virtuel.</li>
                 </ul>
+                <div class="mt-3">
+                  <button class="btn btn-outline-primary toggle-demo" type="button">▶ Vidéo de démonstration</button>
+                  <div class="demo-video d-none mt-2">
+                    <video controls preload="none" playsinline poster="assets/img/demo-probtp-poster.jpg" style="width:100%; border-radius:8px; background:#000;">
+                      <source src="assets/videos/demo-probtp.mp4" type="video/mp4">
+                      Votre navigateur ne peut pas lire cette vidéo.
+                    </video>
+                  </div>
+                </div>
               </div>
               <div class="card-footer text-center">
                 <button class="btn btn-primary toggle-details">Voir plus</button>
@@ -395,6 +404,15 @@
               <li>Utilisation de techniques de Traitement du Langage Naturel (TLN) pour la récupération et l'extraction d'informations spécifiques (ex. : nom, prénom) via des prompts personnalisés.</li>
               <li>Développement d'une interface utilisateur intuitive et responsive avec React et TailwindCSS, optimisée pour les appareils mobiles, permettant aux professionnels de santé d'interagir efficacement avec le chatbot.</li>
             </ul>
+            <div class="mt-3">
+              <button class="btn btn-outline-primary toggle-demo" type="button">▶ Vidéo de démonstration</button>
+              <div class="demo-video d-none mt-2">
+                <video controls preload="none" playsinline poster="assets/img/demo-secourodoc-poster.jpg" style="width:100%; max-width:340px; display:block; margin:0 auto; border-radius:8px; background:#000;">
+                  <source src="assets/videos/demo-secourodoc.mp4" type="video/mp4">
+                  Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+              </div>
+            </div>
               </div>
               <div class="card-footer text-center">
                 <button class="btn btn-primary toggle-details">Voir plus</button>
@@ -418,6 +436,15 @@
                   <li>Intégration d'une fonctionnalité de panier pour visualiser, modifier et retirer les articles avant l'achat.</li>
                   <li>Utilisation de Firebase pour la gestion des données et l'authentification des utilisateurs.</li>
                 </ul>
+                <div class="mt-3">
+                  <button class="btn btn-outline-primary toggle-demo" type="button">▶ Vidéo de démonstration</button>
+                  <div class="demo-video d-none mt-2">
+                    <video controls preload="none" playsinline poster="assets/img/demo-vetements-poster.jpg" style="width:100%; border-radius:8px; background:#000;">
+                      <source src="assets/videos/demo-vetements-flutter.mp4" type="video/mp4">
+                      Votre navigateur ne peut pas lire cette vidéo.
+                    </video>
+                  </div>
+                </div>
                   </div>
                   <div class="card-footer text-center">
                     <button class="btn btn-primary toggle-details">Voir plus</button>
@@ -444,6 +471,15 @@
                       <li>L'hébergement de projets sur des plateformes modernes telles que Netlify et Render</li>
                       <li>Maîtrise de l'écosystème MEAN stack (MongoDB, Express.js, Angular, Node.js)</li>
                     </ul>
+                    <div class="mt-3">
+                      <button class="btn btn-outline-primary toggle-demo" type="button">▶ Vidéo de démonstration</button>
+                      <div class="demo-video d-none mt-2">
+                        <video controls preload="none" playsinline poster="assets/img/demo-devoirs-poster.jpg" style="width:100%; border-radius:8px; background:#000;">
+                          <source src="assets/videos/demo-gestion-devoirs.mp4" type="video/mp4">
+                          Votre navigateur ne peut pas lire cette vidéo.
+                        </video>
+                      </div>
+                    </div>
                       </div>
                       <div class="card-footer text-center">
                         <button class="btn btn-primary toggle-details">Voir plus</button>
@@ -518,6 +554,25 @@
           details.classList.add('d-none');
           preview.classList.remove('d-none');
           button.textContent = 'Voir plus';
+        }
+      });
+    });
+
+    const demoButtons = document.querySelectorAll('.toggle-demo');
+
+    demoButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.experience-card');
+        const demo = card.querySelector('.demo-video');
+        const video = demo.querySelector('video');
+
+        if (demo.classList.contains('d-none')) {
+          demo.classList.remove('d-none');
+          button.textContent = 'Masquer la vidéo';
+        } else {
+          demo.classList.add('d-none');
+          if (video) video.pause();
+          button.textContent = '▶ Vidéo de démonstration';
         }
       });
     });
